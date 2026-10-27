@@ -1,35 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
+      // let fruits = ["Мандарин", "Апельсин", "Яблоко"]
+      // // push()- добовляет в конце массива
+      // fruist.push("Киви")
+      // console.log(fruits);
+      // //pop() - удаляет последний массива
 
+      // fruits.pop()
+      // console.log(fruits);
 
+      // //unshift() - добовляет элемент в начало массава
+      // fruits.unshift("Киви", "Лимон")
+      // console.log(fruist);
 
-        let fruits = ["Мандарин", "Апельсин", "Яблоко"]
-        // push()- добовляет в конце массива 
-        fruist.push("Киви")
-        console.log(fruits);
-        //pop() - удаляет последний массива
+      // //shift() - удаляет элемент с начало массива
+      // fruits.shift()
+      // console.log(fruits);
 
-        fruits.pop()
-        console.log(fruits);
+      // let airports = ["Magas", "antalya", "beslan"];
 
-        //unshift() - добовляет элемент в начало массава 
-        fruits.unshift("Киви", "Лимон")
-        console.log(fruist);
+      // for(let i = 0; i< airports.length; i++){
+      //     console.log(airports[i]);
+
+      // }
+
+      // if (10 == 2){
+      //     document.write('1')
+      // }elseif (2 < 3){
+      //     document.write('2')
+      // }else{
+      //     document.write('3')
+      // }
+
+      function checkElem(num) {
+        if (num >= 10) {
+          console.log(true);
+        } else {
+          console.log(false);
+        }
+      }
+
+      checkElem(15);
+      checkElem(5);
+
+      function changeElem(array, n) {
+        for(let i = 0; i < array.length - 1; i++){
+            array[i] = array[i] * n;
+            
+        }  
         
+        return array;
 
-        //shift() - удаляет элемент с начало массива 
-        fruits.shift()
-        console.log(fruits);
+
+
+      }
+      let array = [1, 2, 3];
+      let result = changeElem(array, 2);
+      console.log(result); 
+      console.log(array); 
+
+
+      function sumElems(array) {
+        let sum = 0;
+       
+        for(let i = 0; i < array.length; i++){
+            sum +=array[i]
+        }
+        return sum
+      }
+
+
+      let array = [1, 2, 3, 4]
+      console.log(sumElems(array)) 
+
+
+      // let fruits = ["яблоко", "банан", "киви"]  
+      
+
+      // fruits.forEach((elem) =>{
+
+      // })
+
+      // let abc = (())
+      // forEach -приберает элементы массива
+
+    //   let cars = ["bmw", "mercedes", "audi"];
+    //  ///            0         1         2
+     
+    //   cars.forEach((elem, index, array) =>{
+    //     console.log(elem);
         
-        
-        
+    //   });
+
+
+      // map() - пребирает элементы массиваа и возвращает новый массив с этим элемент 
+
+  //     let cars = ["bmw", "mercedes", "audi"];
+  //     console.log(cars);
+      
+
+  //     let result = cars.map((elem)=>{
+  //       return "Фрукт:" + elem;
+
+
+  //     });
+
+  // console.log(result);
+
+
+  let  fruits = ["банан","киви", "яблоко"]; 
+  console.log(fruits);
+
+  let rrr = fruits.map((elem, i , arr)=>{
+  return "Фрукт:" + elem; 
+  
+  });
+  console.log(result);
+  
+
+  
+
+      
+
+
+
+
+
+      
+
+
+      
+
+
+
+
+    
+    
     </script>
-</body>
+
+  </body>
 </html>
