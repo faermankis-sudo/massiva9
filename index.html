@@ -39,46 +39,46 @@
       //     document.write('3')
       // }
 
-      function checkElem(num) {
-        if (num >= 10) {
-          console.log(true);
-        } else {
-          console.log(false);
-        }
-      }
+      // function checkElem(num) {
+      //   if (num >= 10) {
+      //     console.log(true);
+      //   } else {
+      //     console.log(false);
+      //   }
+      // }
 
-      checkElem(15);
-      checkElem(5);
+      // checkElem(15);
+      // checkElem(5);
 
-      function changeElem(array, n) {
-        for(let i = 0; i < array.length - 1; i++){
-            array[i] = array[i] * n;
+      // function changeElem(array, n) {
+      //   for(let i = 0; i < array.length - 1; i++){
+      //       array[i] = array[i] * n;
             
-        }  
+      //   }  
         
-        return array;
+      //   return array;
 
 
 
-      }
-      let array = [1, 2, 3];
-      let result = changeElem(array, 2);
-      console.log(result); 
-      console.log(array); 
+      // }
+      // let array = [1, 2, 3];
+      // let result = changeElem(array, 2);
+      // console.log(result); 
+      // console.log(array); 
 
 
-      function sumElems(array) {
-        let sum = 0;
+      // function sumElems(array) {
+      //   let sum = 0;
        
-        for(let i = 0; i < array.length; i++){
-            sum +=array[i]
-        }
-        return sum
-      }
+      //   for(let i = 0; i < array.length; i++){
+      //       sum +=array[i]
+      //   }
+      //   return sum
+      // }
 
 
-      let array = [1, 2, 3, 4]
-      console.log(sumElems(array)) 
+      // let array = [1, 2, 3, 4]
+      // console.log(sumElems(array)) 
 
 
       // let fruits = ["яблоко", "банан", "киви"]  
@@ -115,17 +115,161 @@
   // console.log(result);
 
 
-  let  fruits = ["банан","киви", "яблоко"]; 
-  console.log(fruits);
+  // let  fruits = ["банан","киви", "яблоко"]; 
+  // console.log(fruits);
 
-  let rrr = fruits.map((elem, i , arr)=>{
-  return "Фрукт:" + elem; 
+  // let rrr = fruits.map((elem, i , arr)=>{
+  // return "Фрукт:" + elem; 
   
-  });
-  console.log(result);
+  // });
+  // console.log(result);
+
+
+  // let a = 10
+  // let b = 30
+  // let c = 20
+
+  // let result = !(a !=c || c > b && b<a +b ||  a==c -b )
+  // console.log(result);
+  
+  // let c = '1c'
+  // let result = 'b' + 'a' + +c
+  // console.log(result);
+
+  // let word_1 = 'маслиница'
+  // let word_2 = 'блинчик'
+  // let result = word_1[word_1.length = word_2.length]
+  
+//  console.log(Boolean(!true));
+
+
+
+
+
+
+
+
+
+
+// split И join 
+
+// split()- разбивает строку и возврашает в виде массива 
+
+// let str = "Magaev, Maga, Magaevich"
+// console.log(str);
+
+
+// let resultStr = str.split(",")
+
+// console.log(resultStr);
+
+
+
+// let cars = "bmw, mercedes, bmw" 
+// console.log(cars);
+
+// let cars2 = cars.split("  ")
+// console.log(cars2);
+
+
+//join()- из массива делает строку 
+
+
+// let fruits = ["банан", "апельсин", "мандарин"]
+// console.log(fruits);
+
+// let resultArr =  fruits.join(" /")
+//  console.log(resultArr);
+
+//  let cars = ["bmw", "mercedes", "audi", "li9"]
+//  console.log(cars);
+
+//  let resultcars = cars.join("!")
+//  console.log(resultcars);
+
+
+
+// reverse()- переворачивает порядок элементов массива 
+// let student = ["Иван", "Мага", "Маган"]
+// console.log(student);
+// let revStudents = student.reverse()
+
+// console.log(revStudents);
+
+
+// let modelephone = ["sumsung", "apple", "xiomi"]
+// console.log(modelephone);
+
+// let revpnone = modelephone.reverse()
+// console.log(revpnone);
+
+
+//sort(fn) ортирует массив на месте (не создает копию массива ),
+//меняя в нем прядок элементов 
+
+// let numbers = [3, 6, 8, 2]
+// console.log(numbers);
+
+
+
+// let resultSort = numbers.sort()
+// console.log(resultSort);
+
+// let arr = ["банан", "апельсин", "мандарин", "киви", "аб"]
+
+// console.log(arr);
+
+// let reSortArr = arr.sort() 
+// console.log(reSortArr);
+
+
+let numberStr = ["1", "20", "5", "4", "3"] 
+console.log(numberStr);
+
+let resultNumberStr = numberStr.sort() 
+console.log(resultNumberStr);
+
+
+let num = ["1", "20", "5", "4", "3"]  
+console.log(num);
+
+let resnum = num.sort((a, b) => a - b)
+
+console.log(resnum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
   
 
   
+
+  
+
 
       
 
